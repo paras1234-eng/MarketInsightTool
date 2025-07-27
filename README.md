@@ -33,11 +33,6 @@ MarketInsightTool is a lightweight financial analytics dashboard that provides d
 
 ---
 
-## Screenshots
-
-*You can add screenshots here by uploading images named `screenshot1.png`, etc.*
-
----
 
 ## Tech Stack
 
