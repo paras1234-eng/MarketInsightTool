@@ -69,7 +69,7 @@ Then open `http://localhost:5000` in your browser.
 ## Accessing Deployed Version
 
 **Live Demo (Hosted on Render)**:  
-[https://your-render-link.onrender.com](#) *(Update with actual URL)*
+https://dashboard.render.com/  *(Update with actual URL)*
 
 If access is restricted, please email me for access or use the credentials provided in my CV.
 
