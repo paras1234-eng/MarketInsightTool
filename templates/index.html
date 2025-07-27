@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Market Insight Tool</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .summary-box {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        .chart {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body class="container mt-4">
+    <h1 class="text-primary">📊 Market Insight Tool</h1>
+    <form method="post" class="row g-3 mt-3">
+        <div class="col-auto">
+            <label for="ticker" class="form-label">Enter Stock Ticker:</label>
+            <input type="text" class="form-control" id="ticker" name="ticker" value="{{ ticker }}" required>
+        </div>
+        <div class="col-auto align-self-end">
+            <button type="submit" class="btn btn-primary">Analyze</button>
+        </div>
+    </form>
+
+    {% if summary %}
+    <div class="summary-box mt-4">
+        <h3>📈 Summary for {{ summary["Ticker"] }}</h3>
+        <ul class="list-group">
+            <li class="list-group-item"><strong>Start Date:</strong> {{ summary["Start Date"] }}</li>
+            <li class="list-group-item"><strong>End Date:</strong> {{ summary["End Date"] }}</li>
+            <li class="list-group-item"><strong>Total Return (%):</strong> {{ summary["Total Return (%)"] }}</li>
+            <li class="list-group-item"><strong>Average Daily Return (%):</strong> {{ summary["Avg Daily Return (%)"] }}</li>
+            <li class="list-group-item"><strong>Volatility (%):</strong> {{ summary["Volatility (%)"] }}</li>
+            <li class="list-group-item"><strong>Max Drawdown (%):</strong> {{ summary["Max Drawdown (%)"] }}</li>
+            <li class="list-group-item"><strong>Sharpe Ratio:</strong> {{ summary["Sharpe Ratio"] }}</li>
+            <li class="list-group-item"><strong>RSI:</strong> {{ summary["RSI"] }}</li>
+        </ul>
+    </div>
+
+    <div class="chart text-center">
+        <h4>📉 Price Chart</h4>
+        <img src="data:image/png;base64,{{ plot_url }}" class="img-fluid" />
+    </div>
+    {% endif %}
+</body>
+</html>
+
