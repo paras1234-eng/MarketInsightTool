@@ -107,8 +107,8 @@ This project is for educational and demo purposes only. Please do not reproduce 
 
 **Paras**  
 Business Analyst | Aspiring Python Developer  
-📧 Email: *Available in CV*  
-🌍 Location: UK
+Email: *Available in CV*  
+Location: UK
 
 ---
 
