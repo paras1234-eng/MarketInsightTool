@@ -69,7 +69,7 @@ Then open `https://marketinsighttool.onrender.com/` in your browser.
 ## Accessing Deployed Version
 
 **Live Demo (Hosted on Render)**:  
-*actual URL*    https://dashboard.render.com/  
+*Actual URL*    https://dashboard.render.com/  
 
 If access is restricted, please email me for access or use the credentials provided in my CV.
 
