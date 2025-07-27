@@ -3,7 +3,7 @@
 
 **A Python + Flask Web App to Analyze Financial Instruments**
 
-MarketInsightTool is a lightweight financial analytics dashboard designed to provide real-time stock analysis using public data. It offers core investment metrics such as total return, average daily return, volatility, Sharpe Ratio, RSI, and maximum drawdown for any stock ticker available on Yahoo Finance.
+MarketInsightTool is a lightweight financial analytics dashboard that provides daily updated stock analysis using publicly available data from Yahoo Finance. The tool allows users to input any valid stock ticker and retrieve key investment metrics such as total return, average daily return, volatility, Sharpe Ratio, Relative Strength Index (RSI), and maximum drawdown. It is designed to help job seekers, analysts, and investors quickly assess the historical performance of publicly traded companies over the past year all through a clean and simple interface.
 
 ---
 
