@@ -1,4 +1,4 @@
-# 📊 MarketInsightTool
+# MarketInsightTool
 
 ### A Python + Flask Web App to Analyze Financial Instruments
 
@@ -6,7 +6,7 @@
 
 ---
 
-## 🚀 Features
+## Features
 
 - Input **any stock ticker** (e.g., `AAPL`, `TCS.NS`, `MSFT`)
 - Fetches **real-time data** via Yahoo Finance (`yfinance`)
@@ -23,19 +23,20 @@
 
 ---
 
-## 🔍 Sample Tickers to Try
+## Sample Tickers to Try
 
-| Ticker     | Company Name                        |
-|------------|-------------------------------------|
-| `AAPL`     | Apple Inc.                          |
-| `TCS.NS`   | Tata Consultancy Services (India)   |
-| `MSFT`     | Microsoft Corporation               |
-| `GOOG`     | Alphabet Inc.                       |
-| `INFY.NS`  | Infosys Limited (India)             |
+ Ticker      Company Name                        
+
+ `AAPL`      Apple Inc.                          
+ `TCS.NS`    Tata Consultancy Services (India)   
+ `MSFT`      Microsoft Corporation               
+ `GOOG`      Alphabet Inc.                       
+ `INFY.NS`   Infosys Limited (India)             
+
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Python 3.11+**
 - **Flask** – Web backend
@@ -47,7 +48,7 @@
 
 ---
 
-## 💻 How to Run Locally
+## How to Run Locally
 
 ```bash
 # 1. Clone the repository
@@ -70,20 +71,20 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Then open [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser.
+Then open https://marketinsighttool.onrender.com/ in your browser.
 
 ---
 
-## 🌐 Accessing Deployed Version
+## Accessing Deployed Version
 
 **Live Demo**:  
-🔗 [https://marketinsighttool.onrender.com](https://marketinsighttool.onrender.com)
+ [https://marketinsighttool.onrender.com](https://marketinsighttool.onrender.com)
 
 If access is restricted, please contact me or refer to credentials in my CV.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 MarketInsightTool/
@@ -101,17 +102,17 @@ MarketInsightTool/
 
 ---
 
-## ⚠️ License
+##  License
 
 This project is for **educational and demonstration purposes only**. Not intended for trading or investment advice. Please do not reproduce or distribute without permission.
 
 ---
 
-## 👤 Author
+## Author
 
 **Paras**  
 Business Analyst | Aspiring Python Developer  
-📍 UK | 📧 Contact available in CV
+UK |  Contact available in CV
 
 ---
 
