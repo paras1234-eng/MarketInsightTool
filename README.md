@@ -3,23 +3,23 @@
 
 **A Python + Flask Web App to Analyze Financial Instruments**
 
-MarketInsightTool is a lightweight financial analytics dashboard that provides daily updated stock analysis using publicly available data from Yahoo Finance. The tool allows users to input any valid stock ticker and retrieve key investment metrics such as total return, average daily return, volatility, Sharpe Ratio, Relative Strength Index (RSI), and maximum drawdown. It is designed to help job seekers, analysts, and investors quickly assess the historical performance of publicly traded companies over the past year all through a clean and simple interface.
-
+MarketInsightTool is a lightweight, interactive financial analytics dashboard that provides real-time stock performance analysis using public data from Yahoo Finance. It is designed for job seekers, analysts, and investors who want fast insights into market behavior with professional-quality metrics and charts.
 ---
 
 ## Features
 
 - Input any stock ticker (e.g., AAPL, TCS.NS, MSFT)
-- Real-time data fetched from Yahoo Finance
+- Fetches real-time data via Yahoo Finance (yfinance)
 - Computes advanced metrics:
   - Total Return (%)
   - Average Daily Return (%)
   - Volatility (%)
   - Sharpe Ratio
   - Maximum Drawdown
-  - RSI (Wilder’s Method)
-- Clean and responsive web UI (Flask + HTML + Bootstrap)
-- Hosted on Render (free-tier deployment)
+  - Relative Strength Index (RSI) using Wilder’s Method
+- Interactive Plotly charts rendered in the browser
+- Clean and responsive UI using Flask + Bootstrap
+- Deployed on Render (cloud-hosted, ready to access)
 
 ---
 
@@ -37,28 +37,32 @@ MarketInsightTool is a lightweight financial analytics dashboard that provides d
 ## Tech Stack
 
 - Python 3.11+
-- Flask (Web Framework)
-- yFinance (Data Source)
-- pandas, numpy, matplotlib
-- HTML (Jinja2 templates)
-- Bootstrap CSS
-- Hosted on: Render
+- Flask – Web backend
+- Plotly – Interactive chart rendering
+- pandas, numpy, matplotlib – Data analysis
+- yfinance – Real-time financial data
+- Bootstrap CSS – Responsive frontend design
+- Deployed on Render
 
 ---
 
 ## How to Run Locally
 
-```bash
 # 1. Clone the repository
 git clone https://github.com/paras1234-eng/MarketInsightTool.git
 cd MarketInsightTool
 
-# 2. Create virtual environment and install requirements
+# 2. Create a virtual environment
 python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate on Windows
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+
+# 3. Install dependencies
 pip install -r requirements.txt
 
-# 3. Run the Flask app
+# 4. Run the Flask app
 python app.py
 ```
 
@@ -80,21 +84,23 @@ If access is restricted, please email me for access or use the credentials provi
 ```
 MarketInsightTool/
 │
-├── app.py                # Flask app runner
-├── fetch_data.py         # Fetches and cleans data from yFinance
-├── analyze_returns.py    # Analyzes returns, RSI, Sharpe, etc.
-├── requirements.txt      # Python package dependencies
-├── Procfile              # Render deployment instruction
-├── AAPL_data.csv         # Sample dataset
-└── templates/
-    └── index.html        # Front-end web page
+├── app.py                # Flask entry point
+├── fetch_data.py         # Yahoo Finance data fetcher
+├── analyze_returns.py    # Financial analytics & indicators
+├── plotly_chart.py       # Plotly chart generator
+├── requirements.txt      # Python dependencies
+├── Procfile              # Render deployment config
+├── AAPL_data.csv         # Sample static dataset
+├── .gitignore            # Ignore generated files
+├── templates/
+│   └── index.html        # Web page template
 ```
 
 ---
 
 ## License
 
-This project is for educational and demo purposes only. Please do not reproduce or republish code without permission.
+This project is for educational and demonstration purposes only. Not intended for actual trading or investment advice. Please do not reproduce or distribute without permission.
 
 ---
 
