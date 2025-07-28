@@ -1,3 +1,5 @@
+from plotly_chat import generate_price_chart
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +18,7 @@
     </style>
 </head>
 <body class="container mt-4">
-    <h1 class="text-primary">📊 Market Insight Tool</h1>
+    <h1 class="text-primary"> Market Insight Tool</h1>
     <form method="post" class="row g-3 mt-3">
         <div class="col-auto">
             <label for="ticker" class="form-label">Enter Stock Ticker:</label>
@@ -29,7 +31,7 @@
 
     {% if summary %}
     <div class="summary-box mt-4">
-        <h3>📈 Summary for {{ summary["Ticker"] }}</h3>
+        <h3> Summary for {{ summary["Ticker"] }}</h3>
         <ul class="list-group">
             <li class="list-group-item"><strong>Start Date:</strong> {{ summary["Start Date"] }}</li>
             <li class="list-group-item"><strong>End Date:</strong> {{ summary["End Date"] }}</li>
@@ -43,9 +45,10 @@
     </div>
 
     <div class="chart text-center">
-        <h4>📉 Price Chart</h4>
-        <img src="data:image/png;base64,{{ plot_url }}" class="img-fluid" />
-    </div>
+    <h4> Price Chart</h4>
+    {{ plot_url|safe }}
+</div>
+
     {% endif %}
 </body>
 </html>

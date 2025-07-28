@@ -1,3 +1,6 @@
+from plotly_chart import generate_price_chart
+
+
 from flask import Flask, render_template, request
 import pandas as pd
 import yfinance as yf
@@ -90,7 +93,8 @@ def index():
         }
 
 
-        plot_url = create_plot(data)
+        plot_url = generate_price_chart(data)
+
 
     return render_template("index.html", summary=summary, plot_url=plot_url, ticker=ticker)
 
